@@ -3,6 +3,10 @@ A loose recreation of Flappy Bird with a self-learning AI that teaches itself ho
 
 Created with: https://processing.org/
 
+# Video Demonstration
+
+https://youtu.be/8KKZRY3YLHo
+
 # Description
 
 This program uses a genetic algorithm and a simple neural network to teach itself how to play. The 'Birds' are initalized with a bunch of random weights in their network, they gain 'fitness' by staying alive and going through the pipes. Once all the Birds die, the genetic algorithm randomly (weighted) picks two of them based upon their fitness. Their weights are combined to make a new 'child', and this child's weights have a small chance of mutating slightly. This process is repeated until the new population is full, and then the new population replaces the old one, and the whole cycle repeats. The "Best Bird" (described below) is always added to each new population without any modification to its weights.
